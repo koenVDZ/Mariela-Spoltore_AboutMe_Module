@@ -20,22 +20,26 @@ $lang->load('mod_msaboutme', JPATH_SITE);
 ?>
 
 <div class="about-me_body">
+	<img class="flower_image_corner" src="images/logos/flower_corner_90.png" alt="Corner Flower" />
 	<div class="fLower_heading">
-		<img class="flower_image_corner" src="images/logos/flower_corner_90.png" alt="Corner Flower" />
 		<h2 class="about-me_title"><?php echo Text::_('MOD_MSABOUTME_A_LITTLE_ABOUT'); ?></h2>
+		<img class="about-me_image_2" src="images/logos/tree_flower_01_60.png" alt="Flower" />
 	</div>
 	<div class="about-me_container">
 		<div class="about-me_item about-me_item_1">
 			<img class="about-me_image" src="images/articles/mariela_headshot.png" alt="Mariela Spoltore Head shot" />
 		</div>
 		<div class="about-me_item about-me_item_2">
-			<img class="about-me_image_2" src="images/logos/tree_flower_01_60.png" alt="Flower" />
 			<p><?php echo Text::_('MOD_MSABOUTME_I_AM_A_PRODUCT'); ?></p>
 			<p><?php echo Text::_('MOD_MSABOUTME_MY_SHAMAN_IS_T'); ?></p>
+			<p><?php echo Text::_('MOD_MSABOUTME_MY_ANCIANA_SAB'); ?></p>
 			<br />
 			<div class="byhand about-me_byhand">Mari</div>
 			<div class="about-me_button">
-				<a href="index.php?option=com_content&amp;view=article&amp;id=31&amp;catid=2&amp;lang=en-GB"><?php echo Text::_('MOD_MSABOUTME_KEEP_READING'); ?></a>
+				<a href="index.php?option=com_content&amp;view=article&amp;id=<?php;
+					if ($lang->getTag() == 'en-GB') {?>31&amp;catid=2&amp;lang=en-GB"><?php }
+					else {?>17&amp;catid=2&amp;lang=es-ES"><?php }?>
+					<?php echo Text::_('MOD_MSABOUTME_KEEP_READING'); ?></a>
 			</div>
 		</div>
 	</div>
