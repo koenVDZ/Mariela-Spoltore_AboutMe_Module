@@ -33,6 +33,7 @@ $lang->load('mod_msaboutme', JPATH_SITE);
 			<p><?php echo Text::_('MOD_MSABOUTME_I_AM_A_PRODUCT'); ?></p>
 			<p><?php echo Text::_('MOD_MSABOUTME_MY_SHAMAN_IS_T'); ?></p>
 			<p><?php echo Text::_('MOD_MSABOUTME_MY_ANCIANA_SAB'); ?></p>
+			<p><?php echo Text::_('MOD_MSABOUTME_MY_CRONE_OLD_W'); ?></p>
 			<br />
 			<div class="byhand about-me_byhand">Mari</div>
 			<div class="about-me_button">
